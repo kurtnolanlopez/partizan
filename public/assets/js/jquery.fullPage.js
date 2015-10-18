@@ -1253,7 +1253,7 @@
 
                 setState(slideIndex, slideAnchorLink, v.anchorLink, v.sectionIndex);
 
-                setTimeout(function(){performMovement(v);}, 600);
+                setTimeout(function(){performMovement(v);}, 900);
                 FP.setKeyboardScrolling(false); setTimeout(function(){FP.setKeyboardScrolling(true);}, 1400);
                 //flag to avoid callingn `scrollPage()` twice in case of using anchor links
                 lastScrolledDestiny = v.anchorLink;

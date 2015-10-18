@@ -35,14 +35,14 @@ $(document).ready(function() {
                 position:"absolute",
                 top:"0",
                 height: "0%"
-            }, 500, "easeOutExpo");
+            }, 900, "easeOutExpo");
 
         }else {
             sec1Image.animate({
                 position:"absolute",
                 bottom:"0",
                 height: "0%"
-            }, 500, "easeOutExpo");
+            }, 900, "easeOutExpo");
         }
     }
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
         leftContent.animate({ opacity: 1, top: "-10px" }, 'slow');
         sec1Image.animate({
             height:"100%"
-        },600,"easeOutExpo");
+        },900,"easeOutExpo");
     }
 
     var onLoadSetRev = function(anchorlink, index){
@@ -58,7 +58,7 @@ $(document).ready(function() {
         leftContent.animate({ opacity: 1}, 'slow');
         sec1Image.animate({
             height:"100%"
-        },600,"easeOutExpo");
+        },900,"easeOutExpo");
     }
 
     var toggleMenu = function(){
@@ -125,7 +125,7 @@ $(document).ready(function() {
                     rightContent.animate({ opacity: 1, top: "+10px" }, 'slow');
                     sec1Image.animate({
                         height:"0"
-                    },600,"easeOutExpo");
+                    },900,"easeOutExpo");
                     break;
 
 
@@ -137,7 +137,7 @@ $(document).ready(function() {
                     $('.header-container').slideUp();
                     $('.section0_bot').animate({
                         height:"80%"
-                    },600,"easeOutExpo");
+                    },900,"easeOutExpo");
                     break;
                 case 2:
                     onLoadSet(anchorlink, index);
