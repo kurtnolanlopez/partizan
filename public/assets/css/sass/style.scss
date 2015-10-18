@@ -112,7 +112,7 @@ html,body{
   width:100%;
   padding:0;
 }
-p,h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
   padding:0;
   margin:0;
   font-family: $openSans;
@@ -120,9 +120,30 @@ p,h1,h2,h3,h4,h5,h6{
   color:#383f45;
 }
 
+p{
+  font:11px 'Merriweather';
 
+}
+.bottom{
+  left:50%;
+  transform: translateX(-50%);
+  position:absolute;
+  bottom:150px;
+}
+.black{
 
+  color:black;
+  border:2px solid black;
+}
 
+.black:hover{
+  background:black;
+  color:white;
+}
+.section0_logo{
+  height:45px;
+  opacity:0.7;
+}
 
 .reverse{
   display:inline-block;
@@ -132,8 +153,14 @@ p,h1,h2,h3,h4,h5,h6{
   margin: 0  auto;
   height: 100%;
   text-align: center;
-  h1{font-size:3em;}
-  p{ line-height:17px;  }
+
+  p{
+    margin-top:0;
+    color: #757575;
+    padding-top:0;
+    font-weight:100;
+    font:15px $openSans;
+    line-height:19px;  }
 }
 
 .menu{
@@ -193,6 +220,7 @@ p,h1,h2,h3,h4,h5,h6{
     .social{
       color:$header-font;
       font-size:12px;
+      padding: 0px 5px;
     }
   }
 
@@ -216,20 +244,22 @@ p,h1,h2,h3,h4,h5,h6{
         h4{
 
           color:#6D6D6D;
-          padding-bottom:20px;
+          padding-bottom:10px;
         }
         h1{
-          font-family:$lato;
+          font-family:'Oswald', sans-serif;
           padding-bottom:30px;
+          font-weight:700;
         }
         p{
-          line-height: 25px;
-          font-size: .7em;
+
+          line-height: 205%;
+          font-size: 11px;
           font-weight:400;
-          color:#7e8082;
+          color: #464748;
           left:10px;
-          margin-left:17%;
-          text-align:left;
+          margin-left:16%;
+          text-align:justify;
           max-width:70%;
         }
       }
@@ -255,20 +285,20 @@ p,h1,h2,h3,h4,h5,h6{
     .about_text{
       h4{
         color:#6D6D6D;
-        padding-bottom:30px;
+        padding-bottom:20px;
       }
       h1{
-        font-family:$lato;
-        padding-bottom:50px;
+        font-family:'Oswald';
+        padding-bottom:30px;
       }
       p{
-        line-height:30px;
-        font-size:.8em;
+        line-height:205%;
+        font-size:11px;
         font-weight:400;
         color:#7e8082;
         left:10px;
-        margin-left:22%;
-        text-align:left;
+        margin-left:18%;
+        text-align:justify;
         max-width:65%;
       }
     }
@@ -330,14 +360,17 @@ p,h1,h2,h3,h4,h5,h6{
       .content{
         position:relative;
         top:55%;
-        width: 65%;
+        width: 55%;
         font-size: 1.2em;
         line-height: 2.4em;
-      }
+        h1{
+          font: 1.8em "Lato";
+          color:white;
+          padding: 2%;
+          padding-bottom:35px;
+        }
 
-      h1{
-        color:white;
-        padding: 2%;
+
       }
       width: 100%;
       position:absolute;
@@ -350,6 +383,11 @@ p,h1,h2,h3,h4,h5,h6{
       background-attachment: fixed;
     }
   }
+}
+
+.logo_top{
+  height:12px;
+  margin-top:8px;
 }
 #section11,#section5,#section1{
   position:relative;
@@ -534,7 +572,7 @@ p,h1,h2,h3,h4,h5,h6{
         height:15%;
         max-width:90%;
         padding-top:30px;
-        font-size:14px;
+        font-size:12px;
       }
     }
 
@@ -619,8 +657,11 @@ p,h1,h2,h3,h4,h5,h6{
     text-align: center;
     .text{
       margin:0 auto;
-      max-width:43%;
+      max-width:38%;
       padding-bottom:50px;
+      p{
+        font-size:12px;
+      }
     }
 
     .form{
@@ -756,6 +797,8 @@ textarea{
     padding-bottom:2%;
   }
   p{
+    font:14px $openSans;
+    font-weight:100;
     color: #cbd1d0;
     line-height: 1.7em;-webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
@@ -770,6 +813,8 @@ textarea{
 
 .end_game{
   .left_end{
+    font-weight:100;
+    font:14px $openSans;
     margin-top:20px;
     width:45%;
     display:inline-block;
@@ -790,8 +835,11 @@ textarea{
     padding-bottom:2%;
   }
   p{
+    font-weight:100;
+    font:14px $openSans;
     color: #cbd1d0;
     line-height: 2em;
+    padding-right: 25px;
   }
 
   a{
@@ -828,6 +876,8 @@ textarea{
     padding-bottom:2%;
   }
   p{
+    font-weight:100;
+    font:14px $openSans;
     color: #cbd1d0;
     line-height: 2em;
   }
@@ -849,6 +899,8 @@ textarea{
     }
   }
   .left_end{
+    font-weight:100;
+    font:14px $openSans;
     margin-top:20px;
     width:40%;
     display:inline-block;

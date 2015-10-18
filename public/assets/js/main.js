@@ -35,14 +35,14 @@ $(document).ready(function() {
                 position:"absolute",
                 top:"0",
                 height: "0%"
-            }, 900, "easeOutExpo");
+            }, 1000, "easeInOutExpo");
 
         }else {
             sec1Image.animate({
                 position:"absolute",
                 bottom:"0",
                 height: "0%"
-            }, 900, "easeOutExpo");
+            }, 1000, "easeInOutExpo");
         }
     }
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
         leftContent.animate({ opacity: 1, top: "-10px" }, 'slow');
         sec1Image.animate({
             height:"100%"
-        },900,"easeOutExpo");
+        },1000,"easeInOutExpo");
     }
 
     var onLoadSetRev = function(anchorlink, index){
@@ -58,7 +58,7 @@ $(document).ready(function() {
         leftContent.animate({ opacity: 1}, 'slow');
         sec1Image.animate({
             height:"100%"
-        },900,"easeOutExpo");
+        },1000,"easeInOutExpo");
     }
 
     var toggleMenu = function(){
@@ -75,8 +75,8 @@ $(document).ready(function() {
                 case 1:
                     $('.section0_bot').animate({
                         height: "0%"
-                    }, 500, "easeOutExpo");
-                    setTimeout(toggleMenu,600);
+                    }, 1000, "easeInOutExpo");
+                    setTimeout(toggleMenu,500);
 
                     break;
 
@@ -137,7 +137,7 @@ $(document).ready(function() {
                     $('.header-container').slideUp();
                     $('.section0_bot').animate({
                         height:"80%"
-                    },900,"easeOutExpo");
+                    },1000,"easeOutExpo");
                     break;
                 case 2:
                     onLoadSet(anchorlink, index);
