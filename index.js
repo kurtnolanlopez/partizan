@@ -31,7 +31,7 @@ app.get('/' , function(req,res){
     res.render('index.html');
 });
 app.get('/blog' , function(req,res){
-    res.render('blog.html');
+    res.render('partizan.html');
 });
 
 var user = require('./server/models/user');
