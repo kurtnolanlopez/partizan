@@ -56,5 +56,5 @@ app.use(morgan('dev'));
 var api = require('./server/routes/api')(app,express);
 app.use('/api', api);
 
-app.listen(env);
+app.listen(config.port);
 

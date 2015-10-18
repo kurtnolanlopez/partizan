@@ -43,11 +43,11 @@ gulp.task('nodemon',function() {
     livereload();
     nodemon({
         // the script to run the app
-        script: 'server.js',
+        script: 'index.js',
         ext: 'js'
     }).on('restart', function () {
         // when the app has restarted, run livereload.
-        gulp.src('server.js');
+        gulp.src('index.js');
     });
 });
 
