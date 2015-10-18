@@ -1,0 +1,17 @@
+{
+  "name": "MEANJS",
+  "version": "0.0.0",
+  "authors": [
+    "kurtnolanlopez <kurt.lopez2@yahoo.com>"
+  ],
+  "description": "",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "toastr": "~2.1.2",
+    "angular": "~1.4.7",
+    "angular-resource": "~1.4.7",
+    "angular-route": "~1.4.7"
+  }
+}
