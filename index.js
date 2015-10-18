@@ -27,27 +27,16 @@ app.use(express.static(__dirname + '/public'));
 
 
 
-//serving index
 app.get('/' , function(req,res){
     res.render('index.html');
 });
 app.get('/blog' , function(req,res){
     res.render('blog.html');
 });
-//model
+
 var user = require('./server/models/user');
 
-//route
-//var router = express.Router();
-//router.route('/teacher')
-//    .get(function(req,res){
-//    teacher.find(function(err, teacher){
-//       if(err){
-//           console.log('teacher not found');
-//       }else{
-//          res.json(teacher);}
-//    });
-//});
+
 
 
 app.use(bodyParser.urlencoded({extended:true}));
