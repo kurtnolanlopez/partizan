@@ -204,6 +204,13 @@ $(document).ready(function() {
 
                     },1000,"easeOutExpo");
                     break;
+                case 11:
+                    $('.sectionHolder').animate({
+                        height:"0%",
+                        padding:"0"
+
+                    },1000,"easeOutExpo");
+                    break;
 
 
             }
@@ -295,6 +302,12 @@ $(document).ready(function() {
                     $('.about_bottom_content').animate({
                         height:"45%",
                         padding: "5%"
+                    },1000,"easeOutExpo");
+                    break;
+                case 11:
+                    $('.sectionHolder').animate({
+                        height:"83%",
+                        "padding-top":"5%"
                     },1000,"easeOutExpo");
                     break;
             }

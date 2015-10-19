@@ -700,9 +700,10 @@ p {
 #form2 .sectionHolder, #section10 .sectionHolder {
   padding-top: 5%;
   margin: 0 auto;
-  height: 83%;
+  height: 0%;
   width: 60%;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   #form2 .sectionHolder .text, #section10 .sectionHolder .text {
     margin: 0 auto;
     max-width: 38%;
