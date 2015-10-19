@@ -86,6 +86,15 @@ $(document).ready(function() {
                         toggleMenu();
                     }
                     leftContent.animate({ opacity: 0, top: "+10px" }, 'slow');
+                    $('.box:nth-child(odd)').animate({
+                        height: "0%"
+                    }, 500, "easeInOutExpo");
+                    $('.inverse').animate({
+                        position:"absolute",
+                        bottom:"38%",
+                        height: "0%"
+                    }, 500, "easeInOutExpo");
+
                     break;
                 case 3:
                     sec1Image.animate({
@@ -96,36 +105,104 @@ $(document).ready(function() {
                     }else if(direction=="up"){
                         leftContent.animate({opacity: 0, top: "+10px"}, 'slow');
                     }
+
+                    $('.inverse').animate({
+                        height: "0%",
+                        position: "absolute",
+                        bottom:"38%"
+                    }, 1000, "easeInOutExpo");
+
+                    $('.box').animate({
+                        height: "0%",
+                    }, 1000, "easeInOutExpo");
                     break;
 
                 case 4:
+
+                    $('.long_inverse').animate({
+                        height: "0%",
+                        position: "absolute",
+                        bottom:"15%"
+                    }, 1000, "easeInOutExpo");
+
+                    $('.longbox').animate({
+                        height: "0%",
+                    }, 1000, "easeInOutExpo");
+
                     sec1Image.animate({
                         height:"0%"
                     },500,"easeOutExpo");
                     leftContent.animate({ opacity: 0, top: "+10px" }, 'slow');
+                    if(direction === "up"){}
+                    else if(direction === "down"){
+                        rightContent.animate({ opacity: 0, top: "10px" }, 'slow');
+                    }
                     break;
                 case 5:
                     sec1Image.animate({
                         height:"0%"
-                    },500,"easeOutExpo");
-                    leftContent.animate({ opacity: 0, top: "+10px" }, 'slow');
+                    },1000,"easeOutExpo");
+                    rightContent.animate({ opacity: 0, top: "+10px" }, 'slow');
+                    $('.sectionHolder').animate({
+                        height:"0%"
+
+                    },1000,"easeOutExpo");
+
                     break;
 
                 case 6:
-                    imageArticle(index,nextIndex,direction);
-                    leftContent.animate({ opacity: 0, top: "+10px" }, 'slow');
+                    $('.sectionHolder').animate({
+                        height:"0%"
+                    },1000,"easeOutExpo");
+                    sec1Image.animate({
+                        height:"0%"
+                    },600,"easeOutExpo");
+                    $('.purpose_top').animate({
+                        height:"0"
+                    },300,"easeOutExpo");
+                    $('.end_game').animate({
+                        height:"0"
+                    },600,"easeOutExpo");
                     break;
                 case 7:
-                    $('about_text').animate({ opacity: 0, top: "+10px" }, 'slow');
+                    $('.purpose_top').animate({
+                        height:"0",
+                        padding: "0"
+                    },1000,"easeOutExpo");
+                    $('.end_game').animate({
+                        height:"0"
+
+                    },1000,"easeOutExpo");
 
                     break;
 
                 case 8:
-                    imageArticle(index,nextIndex,direction);
-                    rightContent.animate({ opacity: 1, top: "+10px" }, 'slow');
-                    sec1Image.animate({
-                        height:"0"
-                    },900,"easeOutExpo");
+                    $('.upper_title').animate({
+                        height:"0%"
+                    },1000,"easeOutExpo");
+                    $('.about_bottom_content').animate({
+                        height:"0%",
+                        padding: "0"
+                    },1000,"easeOutExpo");
+                    break;
+                case 9:
+                    $('.upper_title').animate({
+                        height:"0%"
+                    },1000,"easeOutExpo");
+                    $('.about_bottom_content').animate({
+                        height:"0%",
+                        padding: "0"
+                    },1000,"easeOutExpo");
+                    break;
+                case 10:
+                    $('.upper_title').animate({
+                        height:"0%"
+                    },1000,"easeOutExpo");
+                    $('.about_bottom_content').animate({
+                        height:"0%",
+                        padding: "0"
+
+                    },1000,"easeOutExpo");
                     break;
 
 
@@ -143,25 +220,83 @@ $(document).ready(function() {
                     onLoadSet(anchorlink, index);
                     break;
                 case 3:
-                    onLoadSet(anchorlink, index);
+                    $('.inverse').animate({
+                        height: "33%",
+                        position: "absolute",
+                        bottom:"38%"
+                    }, 1000, "easeInOutExpo");
+
+                    $('.box').animate({
+                        height: "33%",
+                    }, 1000, "easeInOutExpo");
+
                     leftContent.animate({ opacity: 1, top: "-10px" }, 'slow');
                     break;
                 case 4:
-                    onLoadSetRev(anchorlink, index);
+                    $('.long_inverse').animate({
+                        height: "85%",
+                        position: "absolute",
+                        bottom:"15%"
+                    }, 1000, "easeInOutExpo");
+
+                    $('.longbox').animate({
+                        height: "85%",
+                    }, 1000, "easeInOutExpo");
+
+
                     break;
                 case 5:
-                    onLoadSet(anchorlink, index);
-                    leftContent.animate({ opacity: 1, top: "-10px" }, 'slow');
+                    leftContent.animate({ opacity: 1 }, 'fast');
+                    rightContent.animate({ opacity: 1, top: "-10px" }, 'slow');
+                    sec1Image.animate({
+                        height:"95%"
+                    },1000,"easeInOutExpo");
                     break;
                 case 6:
-                    onLoadSet(anchorlink, index);
+                    $('.sectionHolder').animate({
+                        height:"100%"
+                    },1000,"easeOutExpo");
                     break;
                 case 7:
-                    $('about_text').animate({ opacity: 1, top: "-10px" }, 'slow');
+                    $('.end_game').animate({
+                        height:"50%"
+                    },1000,"easeOutExpo");
+                    $('.purpose_top').animate({
+                        height:"30%",
+                        padding: "5%"
+                    },1000,"easeOutExpo");
                     break;
+
                 case 8:
-                    onLoadSetRev(anchorlink, index);
-                    break
+                    $('.upper_title').animate({
+                        height:"40%"
+                    },1000,"easeOutExpo");
+                    $('.about_bottom_content').animate({
+                        height:"45%",
+                        padding: "5%"
+
+                    },1000,"easeOutExpo");
+
+                    break;
+
+                case 9:
+                    $('.upper_title').animate({
+                        height:"40%"
+                    },1000,"easeOutExpo");
+                    $('.about_bottom_content').animate({
+                        height:"45%",
+                        padding: "5%"
+                    },1000,"easeOutExpo");
+                    break;
+                case 10:
+                    $('.upper_title').animate({
+                        height:"40%"
+                    },1000,"easeOutExpo");
+                    $('.about_bottom_content').animate({
+                        height:"45%",
+                        padding: "5%"
+                    },1000,"easeOutExpo");
+                    break;
             }
         }
     });

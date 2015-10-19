@@ -339,12 +339,14 @@ p {
 .menu {
   cursor: hand;
   position: absolute;
-  top: 5px;
+  top: 7px;
   right: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px; }
   .menu p {
+    margin: 0;
+    font: 12px "Open Sans", sans-serif;
     color: #808080; }
 
 .menu a {
@@ -588,10 +590,17 @@ p {
     width: 20%;
     height: 100%;
     position: relative; }
-    #section4 .brandAppRow .outbox .box {
-      height: 85%;
-      vertical-align: top; }
-    #section4 .brandAppRow .outbox .box {
+    #section4 .brandAppRow .outbox .longbox {
+      top: 0px;
+      position: absolute;
+      height: 0%;
+      width: 100%; }
+    #section4 .brandAppRow .outbox .long_inverse {
+      bottom: 15%;
+      position: absolute;
+      height: 0%;
+      width: 100%; }
+    #section4 .brandAppRow .outbox .longbox {
       background: #44484b url("/assets/img/e.png");
       background-size: cover;
       background-repeat: none; }
@@ -626,10 +635,12 @@ p {
       color: black; }
     #section4 .brandAppRow .outbox p {
       font-weight: 400;
-      height: 15%;
       max-width: 90%;
-      padding-top: 30px;
-      font-size: 12px; }
+      padding: 30px 20px;
+      font-size: 12px;
+      position: absolute;
+      top: 85%;
+      vertical-align: top; }
 
 #section4 .descRow {
   width: 100%;
@@ -674,7 +685,7 @@ p {
   height: 100%; }
   #section7 .left-content .section_image {
     position: absolute;
-    height: 100%;
+    height: 95%;
     width: 100%;
     background: black url("/assets/img/sce5.jpg");
     background-size: cover;
@@ -788,15 +799,18 @@ textarea {
   width: 100%;
   border: 2px solid #c1bfc4; }
 
-.purpose {
-  height: 45%;
+.purpose_top {
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+  top: 0;
   background-color: #101316;
   padding: 5%;
   color: white; }
-  .purpose h1 {
+  .purpose_top h1 {
     color: #e4e4e4;
     padding-bottom: 2%; }
-  .purpose p {
+  .purpose_top p {
     font: 14px "Open Sans", sans-serif;
     font-weight: 100;
     color: #cbd1d0;
@@ -813,7 +827,10 @@ textarea {
     column-gap: 50px; }
 
 .end_game {
-  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  height: 0%;
+  bottom: 0px;
   background-color: #171718;
   padding: 2% 5%; }
   .end_game .left_end {
@@ -858,9 +875,12 @@ textarea {
   display: inline-block; }
 
 .about_bottom_content {
-  height: 60%;
+  overflow: hidden;
+  height: 0%;
   padding: 5%;
-  background-color: #101316; }
+  background-color: #101316;
+  position: absolute;
+  bottom: 0px; }
   .about_bottom_content h1 {
     color: #e4e4e4;
     padding-bottom: 2%; }
@@ -902,8 +922,11 @@ textarea {
 
 .upper_title {
   text-align: center;
-  position: relative;
-  height: 40%; }
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 0%;
+  overflow: hidden; }
   .upper_title h1 {
     color: white;
     font-size: 4em; }
@@ -949,3 +972,20 @@ input.submit_black {
 input.submit_black:hover {
   background: white;
   color: #101316; }
+
+.inverse {
+  position: absolute;
+  width: 100%;
+  height: 33%;
+  background: url("/assets/img/branding.jpg");
+  background-size: cover;
+  bottom: 38%;
+  overflow: hidden; }
+  .inverse .textPart {
+    margin-top: 100px; }
+  .inverse h1 {
+    font-weight: 400;
+    color: white;
+    padding-bottom: 35px; }
+  .inverse .learn {
+    margin-top: 5%; }

@@ -166,12 +166,14 @@ p{
 .menu{
   cursor:hand;
   position:absolute;
-  top:5px;
+  top:7px;
   right:15px;
   font-family: $openSans;
   font-weight:400;
   font-size:12px;
    p{
+     margin:0;
+     font: 12px $openSans;
      color:$header-font;
    }
 
@@ -522,34 +524,52 @@ p{
       width: 20%;
       height: 100%;
       position: relative;
-      .box{
-        height:85%;
-        vertical-align:top;
+
+      .longbox{
+        top: 0px;
+        position: absolute;
+        height: 0%;
+
+        width: 100%;
       }
-      .box{
+
+      .long_inverse{
+
+        bottom: 15%;
+        position: absolute;
+        height: 0%;
+
+        width: 100%;
+      }
+      .longbox{
         background:#44484b url("/assets/img/e.png");
         background-size: cover;
         background-repeat:none;
+
       }
       .box2{
         background:#0b1218 url("/assets/img/d.png");
         background-size: cover;
         background-repeat:none;
+
       }
       .box3{
         background:#1a2631 url("/assets/img/c.png");
         background-size: cover;
         background-repeat:none;
+
       }
       .box4{
         background:#4f5b65 url("/assets/img/b.png");
         background-size: cover;
         background-repeat:none;
+
       }
       .box5{
         background: #5e788e url("/assets/img/a.png");
         background-size: cover;
         background-repeat:none;
+
       }
       a {
         font-family:$lato;
@@ -568,11 +588,14 @@ p{
         color:black;
       }
       p{
-        font-weight:400;
-        height:15%;
-        max-width:90%;
-        padding-top:30px;
-        font-size:12px;
+        font-weight: 400;
+
+        max-width: 90%;
+        padding: 30px 20px;
+        font-size: 12px;
+        position: absolute;
+        top: 85%;
+        vertical-align: top;
       }
     }
 
@@ -632,7 +655,7 @@ p{
     height:100%;
     .section_image{
       position:absolute;
-      height:100%;
+      height:95%;
       width:100%;
       background: black url('/assets/img/sce5.jpg');
       background-size:cover;
@@ -787,11 +810,14 @@ textarea{
   border: 2px solid #c1bfc4;
 }
 
-.purpose{
-  height:45%;
-  background-color:#101316;
-  padding:5%;
-  color:white;
+.purpose_top{
+  overflow:hidden;
+  height:0;
+  position: absolute;
+  top: 0;
+  background-color: #101316;
+  padding: 5%;
+  color: white;
   h1{
     color: #e4e4e4;
     padding-bottom:2%;
@@ -812,6 +838,12 @@ textarea{
 }
 
 .end_game{
+  overflow:hidden;
+  position: absolute;
+  height: 0%;
+  bottom: 0px;
+  background-color: #171718;
+  padding: 2% 5%;
   .left_end{
     font-weight:100;
     font:14px $openSans;
@@ -827,9 +859,7 @@ textarea{
     width:54%;
     display:inline-block;
   }
-  height:50%;
-  background-color:#171718;
-  padding: 2% 5%;
+
   h1{
     color: #e4e4e4;
     padding-bottom:2%;
@@ -868,9 +898,12 @@ textarea{
 }
 
 .about_bottom_content{
-  height:60%;
+  overflow:hidden;
+  height:0%;
   padding:5%;
   background-color:#101316;
+  position: absolute;
+  bottom: 0px;
   h1{
     color: #e4e4e4;
     padding-bottom:2%;
@@ -928,8 +961,12 @@ textarea{
 
 .upper_title{
   text-align:center;
-  position:relative;
-  height:40%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height:0%;
+  overflow:hidden;
+
 
   h1{
     color:white;
@@ -994,4 +1031,28 @@ input.submit_black{
  input.submit_black:hover{
   background:white;
  color:#101316;
+}
+
+.inverse{
+  position:absolute;
+  width:100%;
+  height:33%;
+  background:url('/assets/img/branding.jpg');
+
+  background-size:cover;
+  bottom:38%;
+  overflow:hidden;
+  .textPart{
+    margin-top:100px;
+  }
+  h1{
+    font-weight: 400;
+    color: white;
+    padding-bottom: 35px;
+  }
+  .learn{
+    margin-top:5%;
+  }
+
+
 }
