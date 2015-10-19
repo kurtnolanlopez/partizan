@@ -635,9 +635,9 @@ p {
       color: black; }
     #section4 .brandAppRow .outbox p {
       font-weight: 400;
+      font: 13px "Open Sans", sans-serif;
       max-width: 90%;
       padding: 30px 20px;
-      font-size: 12px;
       position: absolute;
       top: 85%;
       vertical-align: top; }

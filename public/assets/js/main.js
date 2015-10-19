@@ -256,7 +256,7 @@ $(document).ready(function() {
                     leftContent.animate({ opacity: 1 }, 'fast');
                     rightContent.animate({ opacity: 1, top: "-10px" }, 'slow');
                     sec1Image.animate({
-                        height:"95%"
+                        height:"100%"
                     },1000,"easeInOutExpo");
                     break;
                 case 6:
@@ -269,14 +269,14 @@ $(document).ready(function() {
                         height:"50%"
                     },1000,"easeOutExpo");
                     $('.purpose_top').animate({
-                        height:"30%",
+                        height:"40%",
                         padding: "5%"
                     },1000,"easeOutExpo");
                     break;
 
                 case 8:
                     $('.upper_title').animate({
-                        height:"40%"
+                        height:"50%"
                     },1000,"easeOutExpo");
                     $('.about_bottom_content').animate({
                         height:"45%",
@@ -288,7 +288,7 @@ $(document).ready(function() {
 
                 case 9:
                     $('.upper_title').animate({
-                        height:"40%"
+                        height:"50%"
                     },1000,"easeOutExpo");
                     $('.about_bottom_content').animate({
                         height:"45%",
@@ -297,7 +297,7 @@ $(document).ready(function() {
                     break;
                 case 10:
                     $('.upper_title').animate({
-                        height:"40%"
+                        height:"50%"
                     },1000,"easeOutExpo");
                     $('.about_bottom_content').animate({
                         height:"45%",
