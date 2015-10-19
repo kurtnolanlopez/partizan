@@ -224,9 +224,11 @@ $(document).ready(function() {
                     },1000,"easeOutExpo");
                     break;
                 case 2:
+                    rightContent.animate({ opacity: 1,}, 'fast');
                     onLoadSet(anchorlink, index);
                     break;
                 case 3:
+                    rightContent.animate({ opacity: 1,}, 'fast');
                     $('.inverse').animate({
                         height: "33%",
                         position: "absolute",
